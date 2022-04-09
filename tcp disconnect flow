@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-09T14:25:36.568Z" agent="5.0 (Windows)" etag="JsOU76f5kt6V8w5V-K1W" version="17.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-09T14:30:18.752Z" agent="5.0 (Windows)" etag="YntJWrEgTXAUy9vZyxUX" version="17.4.2" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -81,6 +81,9 @@
         </mxCell>
         <mxCell id="vleNxvmecP7Agy2MG9Rf-15" value="FIN_WAIT2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="80" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vleNxvmecP7Agy2MG9Rf-22" value="&lt;h1&gt;TCP4次挥手过程&lt;br&gt;&lt;/h1&gt;&lt;p&gt;1.被动关闭的一端会出现close_wait状态。&lt;/p&gt;&lt;p&gt;2.主动关闭的一侧当收到对端的FIN时，会进入TIME_WAIT状态，时间为2MSL.&lt;/p&gt;&lt;p&gt;3. 4次的原因是保证双向可靠的关闭。如果是三次，则可能会出现主动的FIN被不断重传&lt;/p&gt;&lt;p&gt;4.close_wait状态可以很长时间，取决于被动关闭一端何时关闭。&lt;/p&gt;&lt;p&gt;5.可以通过设置socket的参数来缩短close_wait或者time_wait的时间。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="80" width="220" height="270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
